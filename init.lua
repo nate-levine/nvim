@@ -14,12 +14,14 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({import = "plugins"})
 
+-- True color support
+vim.cmd "set termguicolors"
 -- Set colorscheme
+vim.cmd "set background=dark"
+vim.cmd "let g:gruvbox_contrast_dark = 'medium'"
 vim.cmd "colorscheme gruvbox"
 -- Set line numbers
 vim.cmd "set number"
--- Remove ~ from unused lines
-vim.cmd "highlight EndOfBuffer ctermfg=bg"
 
 -- Indent rules
 vim.o.tabstop = 4 -- A TAB character looks like 4 spaces

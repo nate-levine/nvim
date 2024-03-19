@@ -1,3 +1,5 @@
+-- Font used is either FantasqueSansNerdPropo or Consolas w/ nerd font icons
+
 -- Lazy.vim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -18,7 +20,13 @@ require("lazy").setup({import = "plugins"})
 vim.cmd "set termguicolors"
 -- Set colorscheme
 vim.cmd "set background=dark"
-vim.cmd "let g:gruvbox_contrast_dark = 'medium'"
+vim.cmd "let g:gruvbox_contrast_dark = 'hard'"
+vim.cmd "let g:gruvbox_italic = 1"
+vim.cmd "let g:gruvbox_transparent_bg = 1"
+-- Note: in "morhetz/gruvbox/colors/gruvbox.vim"
+-- 1. vim.cmd "let s:gb.dark0_hard  = ['#161616', 234]"
+-- 2. vim.cmd "let s:gb.dark3       = ['#161616', 241]"
+-- 3. vim.cmd "let s:gb.bright_red     = ['#fb2934', 167]"
 vim.cmd "colorscheme gruvbox"
 -- Set line numbers
 vim.cmd "set number"

@@ -1,5 +1,5 @@
--- Font used is either FantasqueSansNerdPropo or Consolas w/ nerd font icons
-
+-- Font used is either FantasqueSansNerdPropo or Consolas NerdFont
+-- Consolas NerdFont: https://github.com/wclr/my-nerd-fonts/tree/master/Consolas%20NF
 -- Lazy.vim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
